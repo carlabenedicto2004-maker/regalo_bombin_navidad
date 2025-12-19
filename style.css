@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&display=swap');
+
+:root{
+    --pcolor: #E1E1F5;
+    --scolor:#060654;
+    --tcolor: #e9d7c6;
+    --ccolor: #e8d5c4;
+    --azul_oscuro: #060654;
+    --rosa: #F1DAEB;
+}
+
+body{
+    margin:0;
+    display: flex;
+    flex-flow: column;
+}
+
+body *{
+    font-family: "Outfit", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Merriweather", serif;
+}
+
+header{
+    background-image: url(./img/img_header.png);
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-flow: column;
+    background-position: center;
+}
+
+header h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+header h4{
+    font-size:20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    background: var(--azul_oscuro);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+header p{
+    font-family: "Merriweather", serif;
+}
+
+.itinerario{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+}
+
+.itinerario img{
+    max-width: 100%;
+    object-fit: cover;
+    width: 100%;
+    max-height: 345px;
+    height: 100%;
+}
+
+.seccion_sorpresa{
+    background: var(--rosa);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding:50px 0;
+}
+
+.pista_cumple{
+    background: #540641;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color:white;
+}
+
+.aviso{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.aviso img{
+    max-height: 77px;
+    border-radius: 10px;
+}
+
+.seccion_sorpresa h4{
+    color: #470537;
+    font-size: 25px;
+    margin-top: 0;
+    padding-bottom:15px;
+    margin-bottom:0;
+}
+
+.seccion_sorpresa p{
+    margin:0;
+}
+
+.seccion_itinerario{
+    background: white;
+    width: 100%;
+    padding-bottom:60px;
+}
+
+.seccion_itinerario h3{
+    color: var(--scolor);
+    font-size: 30px;
+    text-align: center;
+}
+
+.itinerario{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.div_blanco{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    background: var(--pcolor);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.dia{
+    font-family: "Merriweather", serif;
+    font-size:24px;
+    color:var(--scolor);
+    font-weight: 600;
+}
+
+.div_info{
+    padding: 20px 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.div_info h5{
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.pista_info{
+    background: #FFCCF2;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+
+.pista_info img{
+    max-height: 80px;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    max-width: 140px;
+}
+
+.seccion_final{
+    background: var(--scolor);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top:20px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.seccion_final h2{
+    font-size:30px;
+    color:white;
+}
+
+.seccion_final p{
+    color:var(--pcolor);
+}
+
+.div_fecha_ubi{
+    background: var(--rosa);
+    padding: 15px 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.div_fecha_ubi p{
+    margin:0;
+    color:var(--scolor);
+}
